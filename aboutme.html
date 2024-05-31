@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>about me</title><style>
+
+#p1 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.6;
+}
+
+.achivements{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.achivements:hover {
+    background-color: darkgreen; /* Darker green */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+.designs{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.designs:hover {
+    background-color: darkgreen; /* Darker green */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.webdev{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.webdev:hover {
+    background-color: darkgreen; /* Darker green */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+#dev2 {
+        width: 100px;
+        height: 100px;
+        background-color: #007bff;
+        position: relative;
+        animation: moveBox 2s infinite alternate; /* Animation duration: 2 seconds, infinite loop, alternate direction */
+    }
+    
+    @keyframes moveBox {
+        0% { left: 0; } /* Starting position */
+        100% { left: calc(100% - 100px); } /* End position */
+    }
+
+    #address{
+        border: #666666;
+        width: 200px;
+        height: 200px;
+        background-color: burlywood;
+    }
+
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body> <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+ </div>
+ <div class="profile-container">
+    <h1 id="p1">Hanish S.S</h1>
+    <img src="./myimg4.JPG" alt="Profile Picture">
+    <p id="p1" style="text-align: center;">Hanish, originally from Hassan, Karnataka, finds myself deeply rooted in the vibrant cultural heritage and picturesque landscapes of my hometown. My educational journey commenced at BGS Kuvempu School, nestled within the prestigious Kuvempu University campus in Shivamogga. Here, amidst the serene surroundings, I laid the groundwork for my academic pursuits. Transitioning to Brilliant Public School, Hassan, for my high school education, I further fortified my academic foundation, setting the stage for my future endeavors.
+        After completing my 10th grade, I embarked on a new chapter at S.D.M PU, Ujire, an institution nurtured under the benevolent guidance of the Dharmasthala Trust. It was here that my passion for technology found fertile ground, particularly in the realm of computer science. My insatiable curiosity and dedication fueled my pursuit of knowledge, leading me to specialize in computer science at SDM Polytechnic, Ujire.
+        Beyond my academic pursuits, my creative instincts found expression in graphic design and photo editing. Proficient in crafting visually stunning posters, banners, and other graphic materials, I possess a keen eye for detail and aesthetics. My skills extend to the art of photo manipulation and enhancement, where I weave magic through pixels, transforming ordinary images into captivating visual narratives.
+        In the realm of technology, I am not just a consumer but a creator. My proficiency in web development allows me to craft elegant and functional websites, showcasing my mastery over programming languages. With a relentless drive for innovation and a thirst for knowledge, I am poised to carve a niche for myself in the ever-evolving landscape of technology and design, making meaningful contributions along the way.</p>
+</div>
+<hr>
+<center><div id="div2"></div>
+    <h2 id="p1">Some of my achivements:</h2>
+<a href="./achivements.html" class="achivements">achivements</a><br>
+<h2 id="p1">Some of my graphic designs:</h2>
+<a href="./designs.html" class="designs">Designs</a><br>
+<h2 id="p1">Some of my web development works:</h2>
+<a href="./web-works.html" class="webdev">web-works</a></center>
+<p id="addres">Looking for expert assistance with webpages, designs, photo, and video editing? Look no further! Contact me at:
+    <ul>
+        <li>📞 Phone: 9449201025<li
+        <li> 📧 Email: hanishgowda7795@gmail.com</li>
+            <li>📷 Instagram: _.hanish_8363</li>
+
+            </ul>
+    </p>
+</div>
+</body>
+
+</html>
